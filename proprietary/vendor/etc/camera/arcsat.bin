@@ -1,0 +1,7 @@
+Device = {K8}
+Version = {1.0.0.0}
+CbSize = {0}
+NumberOfCameras = {3}
+Fov = {120, 85, 20}
+Ratio = {0.54, 1.0, 5.22}
+ActiveRange = {[0, 0, 4208, 3120], [0, 0, 12032, 9024], [0, 0, 3264, 2448]}

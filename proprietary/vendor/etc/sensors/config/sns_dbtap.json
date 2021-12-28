@@ -1,0 +1,16 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "ODIN"],
+    "soc_id": ["291", "246", "305", "321", "339", "415"]
+  },
+  "dbtap":{
+    "owner": "sns_dbtap",
+    ".flag":{
+      "owner": "sns_dbtap",
+      "scpmFlag":{
+        "ver": "0", "type": "flt", "data": "0"
+      }
+    }
+  }
+}

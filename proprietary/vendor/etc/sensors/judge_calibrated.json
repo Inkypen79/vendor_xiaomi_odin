@@ -1,0 +1,7 @@
+Acc lsm6dso_0_platform.accel.fac_cal.bias /vendor/etc/sensors/config/sm8350_lsm6dso_0.json 0 lsm6dso
+Gyr lsm6dso_0_platform.gyro.fac_cal.bias /vendor/etc/sensors/config/sm8350_lsm6dso_0.json 0 lsm6dso
+Bar bmp285_0_platform.pressure.fac_cal.bias /vendor/etc/sensors/config/sm8350_bmp285_0.json 0 bosch_bmp285
+Lux tmd3719_platform.als.fac_cal /vendor/etc/sensors/config/sm8350_tmd3719.json 0 TMD3719ALSPRX
+CCT_B_strm tcs3408_platform.channel.fac_cal /vendor/etc/sensors/config/sm8350_tcs3408.json 0 tcs3408
+CCT_F_strm fs203_platform.channel.fac_cal /vendor/etc/sensors/config/sm8350_fs203.json 0 fs203_cct_stream
+Tof vl53l1_tof_platform.prox.customer /vendor/etc/sensors/config/sm8350_vl53l1_tof_0.json 0 vl53l3_tof

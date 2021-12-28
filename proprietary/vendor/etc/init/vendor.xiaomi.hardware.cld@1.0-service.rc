@@ -1,0 +1,4 @@
+service vendor.cld-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.cld@1.0-service
+    class hal
+    user system
+    group system
