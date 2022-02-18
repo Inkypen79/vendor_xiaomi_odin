@@ -496,6 +496,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libWNR.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libWNR.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libWNR_intf.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libWNR_intf.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libadapter.dylib.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libadapter.dylib.so \
+    vendor/xiaomi/odin/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
+    vendor/xiaomi/odin/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libaudioclientimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaudioclientimpl.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libaudioflingerimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaudioflingerimpl.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libaudiopolicymanagerimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaudiopolicymanagerimpl.so \
