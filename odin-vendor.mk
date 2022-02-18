@@ -400,6 +400,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libQTEEConnector_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libQTEEConnector_system.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libStereoRectifyWrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libStereoRectifyWrapper.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libadsprpc_system.so \
+    vendor/xiaomi/odin/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
+    vendor/xiaomi/odin/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libavenhancements.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libbeluga.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libbeluga.so \
     vendor/xiaomi/odin/proprietary/system_ext/lib64/libbinauralrenderer_wrapper.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libbinauralrenderer_wrapper.qti.so \
