@@ -1,0 +1,13 @@
+#
+# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+on boot && property:ro.boot.product.vendor.sku=lahaina
+  start sxrhalservice
+
+service sxrhalservice /vendor/bin/sxrhalservice
+  disabled
+  class main
+  user system
+

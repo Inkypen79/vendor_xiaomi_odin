@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<ellc_params>
+  <relight_setting>
+    <relight_enable>0</relight_enable>
+    <range1_luxindex_start>490.0</range1_luxindex_start>
+    <range1_luxindex_end>520.0</range1_luxindex_end>
+    <range1_luxindex_start_ratio>3.0</range1_luxindex_start_ratio>
+    <range1_luxindex_end_ratio>2.7</range1_luxindex_end_ratio>
+    <range2_luxindex_start>520.0</range2_luxindex_start>
+    <range2_luxindex_end>540.0</range2_luxindex_end>
+    <range2_luxindex_start_ratio>2.7</range2_luxindex_start_ratio>
+    <range2_luxindex_end_ratio>1.4</range2_luxindex_end_ratio>
+    <range3_luxindex_start>540.0</range3_luxindex_start>
+    <range3_luxindex_end>560.0</range3_luxindex_end>
+    <range3_luxindex_start_ratio>1.0</range3_luxindex_start_ratio>
+    <range3_luxindex_end_ratio>1.0</range3_luxindex_end_ratio>
+  </relight_setting>
+
+  <modelSetting>
+    <phone_version>k1/k1a</phone_version>
+    <model_version>v1.3</model_version>
+    <quant_enable>0</quant_enable>
+    <quant_offset>-2925</quant_offset>
+    <quant_scale>0.0000190793271030997</quant_scale>
+  </modelSetting>
+</ellc_params>

@@ -1,0 +1,11 @@
+#! /bin/sh
+#
+#Copyright (c) 2019-2021 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+#Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
+#
+
+on property:sys.boot_completed=1
+	restart thermal-engine

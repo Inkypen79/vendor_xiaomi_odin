@@ -1,0 +1,9 @@
+on post-fs-data
+service uwbinfo /vendor/bin/pnscr_uwb -c 1
+    class late_start
+    group root
+    user root
+    oneshot
+
+on property:dev.bootcomplete=1
+   start uwbinfo

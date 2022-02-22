@@ -1,0 +1,6 @@
+30,      # gain_comp
+-14,     # gain_makeup
+10,      # up_trans
+200,     # dn_trans
+200,     # hangover
+-1,      # threshold

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.amap.ams">
+	<permission name="android.permission.ACCESS_NETWORK_STATE"/>
+	<permission name="android.permission.INTERNET"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<permission name="com.amap.ams.permission.ACCESS_AMS_SERVICE"/>
+        <permission name="com.qualcomm.qti.permission.ACCESS_PRECISE_LOCATION_API"/>
+    </privapp-permissions>
+</permissions>

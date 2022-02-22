@@ -1,0 +1,371 @@
+{
+    "version": "1.0",
+    "product": "odin",
+    "testitems": [
+        {
+            "name": "home_version_info_test",
+            "caption": "版本信息测试"
+        },
+        {
+            "name": "home_sim_card_check_test",
+            "caption": "SIM卡测试"
+        },
+        {
+            "name": "home_vibrator_check_test",
+            "caption": "震动测试"
+        },
+        {
+            "name": "home_keyboard_check_test",
+            "caption": "按键测试",
+            "config": {
+                "support_check_keys": [
+                    "volumeUp_down",
+                    "volumeUp_up",
+                    "volumeDown_down",
+                    "volumeDown_up",
+                    "power_down",
+                    "power_up"
+                ]
+            }
+        },
+        {
+            "name": "home_led_test",
+            "caption": "LED灯测试",
+            "config": {
+                "support_checked_leds": [
+                    {
+                        "name": "cit_lcdlight_brightness",
+                        "type": "screen_brightness",
+                        "min_brightness": 2,
+                        "max_brightness": 2047
+                    },
+                    {
+                        "name": "cit_torch_first",
+                        "type": "camera_flash",
+                        "switch_node_path": "/sys/class/leds/led:switch_0",
+                        "torch_node_path": "/sys/class/leds/led:torch_0"
+                    },
+                    {
+                        "name": "cit_torch_second",
+                        "type": "camera_flash",
+                        "switch_node_path": "/sys/class/leds/led:switch_1",
+                        "torch_node_path": "/sys/class/leds/led:torch_1"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "home_touch_panel_test",
+            "caption": "触摸屏测试"
+        },
+        {
+            "name": "home_display_test",
+            "caption": "屏幕显示测试"
+        },
+        {
+            "name": "home_audio_ear_piece_test",
+            "caption": "听筒测试"
+        },
+        {
+            "name": "home_audio_bottom_speaker_test",
+            "caption": "bottom扬声器测试"
+        },
+        {
+            "name": "home_audio_top_speaker_test",
+            "caption": "top扬声器测试"
+        },
+        {
+            "name": "home_audio_main_mic_test",
+            "caption": "main mic测试"
+        },
+        {
+            "name": "home_audio_top_mic_test",
+            "caption": "top mic测试"
+        },
+        {
+            "name": "home_audio_back_mic_test",
+            "caption": "back mic测试"
+        },
+        {
+            "name": "home_audio_head_set_test",
+            "caption": "耳机测试",
+            "config": {
+                "head_set_config": "type-c"
+            }
+        },
+        {
+            "name": "home_wifi_scan_test",
+            "caption": "WIFI扫描测试"
+        },
+        {
+            "name": "home_wifi_address_test",
+            "caption": "WIFI地址测试"
+        },
+        {
+            "name": "home_bt_scan_test",
+            "caption": "BT扫描测试"
+        },
+        {
+            "name": "home_bt_address_test",
+            "caption": "BT地址测试"
+        },
+        {
+            "name": "home_sensor_accelermeter_test",
+            "caption": "加速度感应器测试"
+        },
+        {
+            "name": "home_sensor_gyroscope_test",
+            "caption": "陀螺仪感应器测试"
+        },
+        {
+            "name": "home_sensor_magnetic_test",
+            "caption": "磁场感应器测试"
+        },
+        {
+            "name": "home_sensor_proximity_test",
+            "caption": "距离感应器测试"
+        },
+        {
+            "name": "home_sensor_pressure_test",
+            "caption": "压力感应器测试"
+        },
+        {
+            "name": "home_sensor_light_test",
+            "caption": "光线感应器测试",
+            "config": {
+                "sensor_light_val_path_config": "/sys/class/mi_display/disp-DSI-0/brightness_clone"
+            }
+        },
+        {
+            "name": "home_sensor_tof_test",
+            "caption": "激光感应器测试"
+        },
+        {
+            "name": "home_sensor_flick_test",
+            "caption": "Flicker感应器测试"
+        },
+        {
+            "name": "home_sensor_hall_test",
+            "caption": "霍尔感应器测试",
+            "config": {
+                "sensor_hall_magin_top": 0,
+                "sensor_hall_magin_left": 150,
+                "sensor_hall_test_full_screen": true
+            }
+        },
+        {
+            "name": "home_rear_main_camera_test",
+            "caption": "后置主相机测试",
+            "config": {
+                "camera_id_rear_main": 0
+            }
+        },
+        {
+            "name": "home_front_main_test",
+            "caption": "前置屏下相机测试",
+            "config": {
+                "camera_id_front_main": 1
+            }
+        },
+        {
+            "name": "home_rear_super_tele_camera_test",
+            "caption": "超级长焦tele相机测试",
+            "config": {
+                "camera_id_rear_x_tele": 23
+            }
+        },
+        {
+            "name": "home_rear_ultra_camera_test",
+            "caption": "广角ultra相机测试",
+            "config": {
+                "camera_id_rear_ultra": 21
+            }
+        },
+        {
+            "name": "home_battery_test",
+            "caption": "电池测试",
+            "config": {
+                "battery_chip_ok_path_config": "/sys/class/qcom-battery/chip_ok",
+                "battery_autnentic_path_config": "/sys/class/qcom-battery/authentic",
+                "support_dual_connector": true,
+                "battery_dual_connector_path_config": "/sys/class/qcom-battery/bq2597x_slave_battery_present"
+            }
+        },
+        {
+            "name": "home_charger_test",
+            "caption": "充电器测试",
+            "config": {
+                "support_pd_charger": true,
+                "charger_type_path_config": "/sys/class/power_supply/usb/type",
+                "cc_orientation_path_config": "/sys/class/qcom-battery/cc_orientation"
+            }
+        },
+        {
+            "name": "home_otg_test",
+            "caption": "OTG",
+            "config": {
+                "cc_orientation_path_config": "/sys/class/qcom-battery/cc_orientation"
+            }
+        },
+        {
+            "name": "home_wireless_charger_test",
+            "caption": "无线充电"
+        },
+        {
+            "name": "home_reverse_wireless_charger_test",
+            "caption": "反向无线充电",
+            "config": {
+                "reverse_wireless_charge_switch_path_config": "/sys/class/qcom-battery/reverse_chg_mode"
+            }
+        },
+        {
+            "name": "home_nfc_test",
+            "caption": "NFC测试"
+        },
+        {
+            "name": "home_sensor_gps_test",
+            "caption": "GPS测试"
+        },
+        {
+            "name": "home_sensor_sar_data_collect_test",
+            "caption": "SAR Sensor数据采集测试",
+            "config": {
+                "sar_sensor_num": 2,
+                "first_sar_chanel_num": 9,
+                "second_sar_chanel_num": 9,
+                "c0_threshold_far_first_sar": [-300,300],
+                "c0_threshold_near_first_sar": [1200,20000],
+                "c0_threshold_far_second_sar": [-300,300],
+                "c0_threshold_near_second_sar": [1000,20000]
+            }
+        },
+        {
+            "name": "home_fp_sensor_check_test",
+            "caption": "指纹传感器测试"
+        },
+        {
+            "name": "home_fp_fod_check_test",
+            "caption": "屏下指纹录入测试",
+            "config": {
+                "finger_print_tips_view_color_generation": 3,
+                "finger_print_tips_view_shape": "circle",
+                "fp_fod_test_hbm_switch_on_cmd": "echo 5  1024 >  /sys/class/mi_display/disp-DSI-0/disp_param",
+                "fp_fod_test_hbm_switch_off_cmd": "echo 5  -1 >  /sys/class/mi_display/disp-DSI-0/disp_param"
+            }
+        }
+    ],
+    "auxiliaryTestItems": [
+        {
+            "name": "bt_tool_test",
+            "caption": "蓝牙测试工具"
+        },
+        {
+            "name": "wlan_tool_test",
+            "caption": "WLAN测试工具"
+        },
+        {
+            "name": "wlan_sniffer_tool_test",
+            "caption": "WLAN抓包测试工具"
+        },
+        {
+            "name": "accelermeter_sensor_cali",
+            "caption": "加速度感应器校准"
+        },
+        {
+            "name": "gyroscope_sensor_cali",
+            "caption": "陀螺仪感应器校准"
+        },
+        {
+            "name": "fp_fod_cali",
+            "caption": "屏下指纹校准"
+        },
+        {
+            "name": "touch_pointer_location",
+            "caption": "触摸屏测试"
+        },
+        {
+            "name": "audio_speaker_cali",
+            "caption": "扬声器校准",
+            "config": {
+                "speaker_calibration_cmds": [
+                    "spkcal  -c ",
+                    "spkcal  -m "
+                ]
+            }
+        },
+        {
+            "name": "camera_cali",
+            "caption": "相机校准"
+        },
+        {
+            "name": "uwb_cali_test",
+            "caption": "UWB校准"
+        },
+
+        {
+            "name": "cam_otp_down_load_test",
+            "caption": "相机OTP烧录"
+        },
+        {
+            "name": "sar_sensor_collect_cali",
+            "caption": "SAR感应器数据收集和校准",
+            "config": {
+                "sar_sensor_num": 2,
+                "first_sar_chanel_num": 9,
+                "second_sar_chanel_num": 9,
+                "c0_threshold_far_first_sar": [-300,300],
+                "c0_threshold_near_first_sar": [1200,20000],
+                "c0_threshold_far_second_sar": [-300,300],
+                "c0_threshold_near_second_sar": [1000,20000],
+                "sar_sensor_match_value": 0
+            }
+        },
+        {
+            "name": "sar_sensor_authenti",
+            "caption": "Sar Authenti 测试"
+        }
+    ],
+    "autoTestItems": [
+        {
+            "name": "auto_test_battery_dual_connector",
+            "caption": "自动化测试电池双连接器",
+            "config": {
+                "battery_dual_connector_path_config": "/sys/class/qcom-battery/bq2597x_slave_battery_present"
+            }
+        },
+        {
+            "name": "auto_test_camera_fuseid",
+            "caption": "摄像头FUSEID信息",
+            "config": {
+                "support_cam_fuseid_config": [
+                    {
+                        "name": "rearMain",
+                        "fuseid_sysprop": [
+                            "camera.sensor.rearMain.fuseID",
+                            "vendor.camera.sensor.rearMain.fuseID"
+                        ]
+                    },
+                    {
+                        "name": "frontMain",
+                        "fuseid_sysprop": [
+                            "vendor.camera.sensor.frontMain.fuseID"
+                        ]
+                    },
+                    {
+                        "name": "rearUltra",
+                        "fuseid_sysprop": [
+                            "camera.sensor.rearUltra.fuseID",
+                            "vendor.camera.sensor.rearUltra.fuseID"
+                        ]
+                    },
+                    {
+                        "name": "rearTele4x",
+                        "fuseid_sysprop": [
+                            "vendor.camera.sensor.rearTele4x.fuseID"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

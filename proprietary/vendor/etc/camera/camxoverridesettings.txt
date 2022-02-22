@@ -1,0 +1,165 @@
+# K8 setting file
+multiCameraLogicalXMLFile=odin.xml
+
+#close camera log
+logInfoMask=0
+overrideLogLevels=0x1
+logWarningMask=0
+logConfigMask=0
+systemLogEnable=TRUE
+logCoreCfgMask=0
+enableAsciiLogging=0
+logRequestMapping=FALSE
+enableTxtLogging=0
+traceGroupsEnable=0
+enable3ADebugData=FALSE
+enableTuningMetadata=FALSE
+raiserecoverysigabrt=FALSE
+enableCameraCoreDumpBinary=FALSE
+enableCameraCoreDumpText=FALSE
+
+#enable high thermal strategy
+enableBLMClient=1
+
+# TORCH
+overrideFlashTorchCurrent=250
+overrideFlashlightCurrent=100
+overrideTorchCurrent=100
+
+#TOF
+enableTOFInterface=TRUE
+isTofIntfTypeQSEE=TRUE
+
+# SAT
+isZoomRatioSupported=TRUE
+videoSATSupportedRange=0x0b
+isPhyicalMultiCameraSupported=TRUE
+enablePostZoomFOV=1
+maxDigitalZoom=50.0
+MfnrDefaultFrameNumber=8
+MfnrDynamicFrameEnable=0
+setHDRMode=0
+IsSHDRThreeExpMode=1
+HDRSupportedFlashHdr=0
+isSwitchAnimationSupported=TRUE
+VideoHdrAvailableConfigurations=hdr10plus:4k@30|hdr10plus:4k@60|hdr10:8k@24|hdr10:8k@30
+enablePerRequestSync=FALSE
+isSatPipSupported=TRUE
+SATMapHeight=228
+is3rdLightWeightSupported=TRUE
+isTeleOisSupported=TRUE
+extendedMaxZoomRatio=10.0
+
+#uesd by satZoomSpeed static metadata
+satZoomButton=0.5:1:2:5:10:20:50|0.5:1:2:5:10:15
+satZoomTime=600|400
+
+# Bokeh
+bokehRelightVerion=2
+bokehVendorID=0
+ismfnrbokehsupported=TRUE
+
+#Mfnr Dynamic Frame
+MfnrDefaultFrameNumber=5
+MfnrDynamicFrameEnable=1
+
+#SW Sync
+multiCameraSWFrameSyncInterval=5
+multiCameraHWSyncMask=0x0
+multiCameraFPSMatchMask=0x1
+multiCameraFrameSyncMask=0x1
+multiCameraExposureTimeMatch=TRUE
+#multiCameraDetectFrameSync=false
+enableExposureTimeMatch = true
+
+# Video skinbeautifier/AI/Bokeh/Filter
+isVideoBeautifierSupported=TRUE
+isVideoBeautyEISSupported=TRUE
+isVideoBeautyScreenshotSupported=TRUE
+AIEnhancementVersion=2
+AIEnhancementVideoSupportVersion=1
+colorBokehVersion=0
+isVideoBokehSupported=TRUE
+isFrontVideoBokehSupported=TRUE
+isColorRetentionSupported=TRUE
+isVideoFilterSupported=TRUE
+isVideoColorRetentionBackSupported=TRUE
+superVideoFilterVersion=1
+
+#Video log format and mimovie
+isVideoMimovieSupported=TRUE
+isVideoLogformatSupported=TRUE
+
+isNightYuvReprocSupported=TRUE
+
+#MIVI Supernight SE
+MIVISuperNightSupportMask=0x0101
+
+# Video EIS
+#Res1@FPS1|Res2@FPS2 ...,5--720P,6--1080P,8--4K,3001--8K
+vsquality=5@30|6@30|6@60|8@60|3001@24
+iseispreviewSupported=TRUE
+is60fpseisSupported=TRUE
+
+#Enable super buffer in HFR mode
+FPSForHALOutputBufferCombined=120
+
+#Enable GPU rotate
+enableGPURotation=TRUE
+
+# Hdr Support AlgoEngine Status
+SupportedAlgoEngineHdr=1
+
+# Video HDR Status
+isVideoHDRSupportSetFreq=3
+
+# Quickview
+enableCHIPartialData=1
+quickviewsupport=TRUE
+quickviewmask=0x2F03
+addScanIn3ALockStatus=1
+
+MiCamDiagMask=0x0
+
+#Enable motion capture
+enableMotionCapture=1
+
+#Enable shot2Shutter for zsl capture
+soundTimeWhenAnchor=1
+
+#input size only maxsize for cts
+minReprocessInputWidth=0x1FFF
+minReprocessInputHeight=0x1FFF
+
+#Enable OIS Optimization
+enableOISOptimization=TRUE
+OISMaxWaitingTime=40
+NightOISMaxWaitingTime=50
+
+#video HDR EIS
+imageConfHighThreshold =150
+imageConfLowThreshold =100
+minAge =10
+absoluteMotion =1.0
+absoluteMotionThreshold =1.0
+absoluteMotionConfidence =100
+absoluteMotionConfidenceThreshold =100
+manualAlignmentFusionMode =AlignGyroBaseOnly
+
+# Autofocus
+disableFocusIndication=1
+
+#enable camera pre init
+isEarlysettingsEnable=0x31
+
+#enable earlyPCR
+numPCRsBeforeStreamOn=1
+
+#MFHDR flicker
+enableMfhdrFlickerDetection=TRUE
+
+pluginBurstReqCnt=0x2
+pluginBurstReqCntForHeif=0x3
+
+#Max Flush timeout setting
+sessionMaxFlushWaitTime=2000

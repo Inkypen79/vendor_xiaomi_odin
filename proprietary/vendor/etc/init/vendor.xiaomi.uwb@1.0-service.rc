@@ -1,0 +1,4 @@
+service uwb_hal_service /vendor/bin/hw/vendor.xiaomi.uwb@1.0-service
+    class hal
+    user uwb
+    group uwb

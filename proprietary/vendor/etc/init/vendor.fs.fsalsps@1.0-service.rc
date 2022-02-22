@@ -1,0 +1,18 @@
+#chcon u:object_r:hal_displayfeature_xiaomi_default_exec:s0 /vendor/bin/hw/vendor.fs.fsalsps@1.0-service
+
+service fsalsps-hal-1.0 /vendor/bin/hw/vendor.fs.fsalsps@1.0-service
+    class late_start
+    user system
+    group system graphics drmrpc
+    disabled
+
+on property:init.svc.vendor.qti.hardware.display.composer=stopping && property:init.svc.vendor.qti.hardware.display.allocator=stopping
+    stop fsalsps-hal-1.0
+
+on property:sys.boot_completed=1 && property:persist.vendor.trigger.cct=1
+    start fsalsps-hal-1.0
+
+on property:init.svc.vendor.qti.hardware.display.composer=restarting && property:init.svc.vendor.qti.hardware.display.allocator=restarting
+    restart fsalsps-hal-1.0
+
+

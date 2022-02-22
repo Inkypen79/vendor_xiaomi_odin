@@ -1,0 +1,16 @@
+# Test unit for wind noise reduction (WNR)
+
+# Static Configuration
+WNR: fft_size                                         512
+WNR: hop_size                                         128
+WNR: max_frequency                                    9000
+WNR: least_windy_channel_duration                     200
+WNR: least_windy_channel_charge_time_offset           80
+WNR: least_windy_channel_charge_time_down_transition  0
+WNR: least_windy_channel_charge_time_onset            160
+WNR: least_windy_channel_charge_time_up_transition    40
+
+# Set enable WNR (1 - enabled, 0 - bypass)
+WNR: SET_MODE_PARAMS 1
+
+

@@ -1,0 +1,31 @@
+# ------------------------------ WNR: ------------------------------ #
+###	Parameter											Default	Range			Description
+###	max_frequency					4000	#[2000,8000]		only upto max_freq is accessed
+
+WNR: band_start						0	#[0,2000]		wind analysis band start frequency [Hz]
+WNR: band_end						4000	#[2000,max_freq]	wind analysis band end frequency   [Hz]
+WNR: smoothing_time					300	#[0,1000]		cross correlation smoothing factor decay to half time [msec]
+WNR: noise_floor					-78.14	#[-inf,-16]		normalized noise level [dB]
+WNR: switch_threshold					0.892	#[0.0,1.0]		bandwise switching threshold
+WNR: max_switch_frequency_diff				2000	#[0,max_freq]		max difference of switching frequency in a second [Hz]
+WNR: switch_policy					0	#{0,1}			0/1 for windband level/signal to total (STT) power ratio 
+WNR: windband_width					500	#[200,2000]		wind band width [Hz]
+WNR: windband_smoothing_time				300	#[0,1000]		wind band level smoothing factor decay to half time [msec]
+WNR: windband_absolute_threshold			-61.5	#[-inf,-16]		absolute level threshold for switching [dB]
+WNR: windband_level_ratio_threshold			1.1     #[1,10]			level ratio threshold for switching 
+WNR: windband_level_switching_tolerance			0.0013	#[0,0.1]		level tolerance for least windy channel selection [dB]
+WNR: stt_fullband_absolute_threshold			0.4	#[0, 0.8]		Fullband STT absolute ratio threshold for bandwise switching 
+WNR: stt_fullband_level_ratio_threshold			0.8	#[0,1]			Fullband STT relative ratio threshold for bandwise switching 
+WNR: stt_fullband_level_switching_tolerance		0.01	#[0,0.4]		Fullband STT tolerance for least windy channel selection 
+#WNR: least_windy_channel_duration			200	#[0,2000]		least windy channel counting duration [msec]
+WNR: least_windy_channel_count_mode			0	#{0,1}			counting mode, 0/1 for consecutive/accumulative
+#WNR: least_windy_channel_charge_time_offset		80	#[0,1000]		Charge time for switching [msec]
+#WNR: least_windy_channel_charge_time_down_transition	0	#[0,1000]		Charge time for switching [msec]
+#WNR: least_windy_channel_charge_time_onset		160	#[0,1000]		Charge time for switching [msec]
+#WNR: least_windy_channel_charge_time_up_transition	40	#[0,1000]		Charge time for switching [msec]
+WNR: switching_extension_bandwidth			500	#[0,1000]		switching extension bandwidth [Hz]
+WNR: switching_transition_bandwidth			250	#[0,1000]		switching transition bandwidth [Hz]
+WNR: spike_band_lower					600	#[200,max_freq]		spike detection band start frequency [Hz]
+WNR: spike_band_upper					8000	#[200,max_freq]		spike detection band end frequency [Hz]
+WNR: spike_level_ratio_threshold			1.2	#[1,20]			spike detection cross-channel level threshold
+WNR: spike_smoothing_bandwidth				250	#[100,1000]		spectrum smoothing filter support width [Hz]

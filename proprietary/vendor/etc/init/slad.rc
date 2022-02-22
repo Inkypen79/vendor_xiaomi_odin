@@ -1,0 +1,14 @@
+service slad /vendor/bin/slad
+    class main
+    socket slad stream 0666 root system
+    disabled
+
+on property:vendor.sla.enabled=1
+    start slad
+
+on property:vendor.sla.enabled=0
+    stop slad
+
+on post-fs-data
+    mkdir /data/vendor/misc/sla 0770 system system
+    insmod /vendor/lib/modules/sla.ko

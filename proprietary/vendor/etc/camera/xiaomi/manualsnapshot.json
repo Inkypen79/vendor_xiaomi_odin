@@ -1,0 +1,79 @@
+{
+  "PipelineName": "manualsnapshot",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.sr",
+        "NodeInstance": "SrInstance0",
+        "NodePropertyId" : 4
+      },
+      {
+        "NodeName": "com.qcom.plugin.offlinepostproc",
+        "NodeInstance": "YuvReprocessInstance"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.depurple",
+          "NodeInstance": "DepurpleInstance0",
+          "NodePropertyId" : 1
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.ldc",
+          "NodeInstance": "LDCInstance0"
+      }
+    ]
+  },
+  "PortLinkages": {
+      "Link": [
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "SrInstance0"
+          }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SrInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "YuvReprocessInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "YuvReprocessInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "DepurpleInstance0"
+        }
+      },
+      {
+          "SrcPort": {
+              "PortId": 0,
+              "NodeInstance": "DepurpleInstance0"
+          },
+          "DstPort": {
+              "PortId": 0,
+              "NodeInstance": "LDCInstance0"
+          }
+      },
+      {
+        "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "LDCInstance0"
+        },
+        "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "SinkBuffer"
+        }
+      }
+      ]
+  }
+}

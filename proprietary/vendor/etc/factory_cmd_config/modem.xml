@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<TestCases>
+    <Description>Modem</Description>
+    <Item>
+        <Description>Card slot status</Description>
+        <Step index="1">
+            <type>exec</type>
+            <addr>mtb 5 1</addr>
+            <operation>exec</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+
+</TestCases>
