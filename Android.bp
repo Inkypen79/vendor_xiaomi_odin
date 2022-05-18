@@ -151,28 +151,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "MStatsSystemService",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/MStatsSystemService/MStatsSystemService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "QesdkSysService",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/QesdkSysService/QesdkSysService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "QtiTelephony",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/QtiTelephony/QtiTelephony.apk",
@@ -333,33 +311,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ams",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/ams/ams.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "beyondGnssService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/beyondGnssService/beyondGnssService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.qti.services.systemhelper",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

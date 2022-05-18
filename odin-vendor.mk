@@ -2006,6 +2006,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/odin/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
     vendor/xiaomi/odin/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
     vendor/xiaomi/odin/proprietary/vendor/lib/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayskuutils.so \
+    vendor/xiaomi/odin/proprietary/vendor/lib/libdolbyottcameracontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdolbyottcameracontrol.so \
     vendor/xiaomi/odin/proprietary/vendor/lib/libdolbyottcontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdolbyottcontrol.so \
     vendor/xiaomi/odin/proprietary/vendor/lib/libdovi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdovi.so \
     vendor/xiaomi/odin/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
@@ -3388,8 +3389,6 @@ PRODUCT_PACKAGES += \
     DeviceInfo \
     DynamicDDSService \
     ImsRcsService \
-    MStatsSystemService \
-    QesdkSysService \
     QtiTelephony \
     QtiTelephonyService \
     SimContact \
@@ -3406,9 +3405,7 @@ PRODUCT_PACKAGES += \
     StorageManager \
     WallpaperCropper \
     WfdService \
-    ams \
     beyondGnssService \
-    com.qualcomm.qti.services.systemhelper \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
