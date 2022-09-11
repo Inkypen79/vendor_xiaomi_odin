@@ -1,5 +1,10 @@
 <TetrasSRParams>
-	<SRVersion>SR_X_SDM_V3.0.1.3315_M1.62_k8_2021-07-21 12:00:30</SRVersion>
+	<SRVersion>SR_X_SDM_V3.0.1.3515_M1.62_k8_2021-07-21 12:00:30</SRVersion>
+
+	<PreSetParamsGroup>
+		<Mutable_Model_Group_GainNum>7</Mutable_Model_Group_GainNum>
+	</PreSetParamsGroup>
+
 	<SRParams>
 		<ParamGroup>
 			<MatchEuqalCamId>SR_CAMERA_ID_K8_WIDE_HMX</MatchEuqalCamId>
@@ -8943,20 +8948,4 @@
 			</ParamsArray>
 		</ParamGroup>
 	</SRParams>
-	<LegacyInternalParamsGroup>
-		<Qual_ISP_NoiseCalib_Params>
-			<Qual_NoiseCalib_Param_Item>
-				<NoiseIsp_Calib_CamId>SR_CAMERA_ID_K8_WIDE_HMX</NoiseIsp_Calib_CamId>
-				<Mutable_NoiseCalib_S>{0.138329, 0.139973, 0.138088}</Mutable_NoiseCalib_S>
-				<Mutable_NoiseCalib_R0>{0.056887, 0.043948, 0.061343}</Mutable_NoiseCalib_R0>
-				<Mutable_NoiseCalib_R1>{2.766619, 0.612588, 1.406095}</Mutable_NoiseCalib_R1>
-			</Qual_NoiseCalib_Param_Item>
-			<Qual_NoiseCalib_Param_Item>
-				<NoiseIsp_Calib_CamId>SR_CAMERA_ID_K8_TELE_5X_HI847</NoiseIsp_Calib_CamId>
-				<Mutable_NoiseCalib_S>{0.311233, 0.302747, 0.299937}</Mutable_NoiseCalib_S>
-				<Mutable_NoiseCalib_R0>{0.238020, 0.361748, 0.239699}</Mutable_NoiseCalib_R0>
-				<Mutable_NoiseCalib_R1>{0.656307, 0.694298, 0.633585}</Mutable_NoiseCalib_R1>
-			</Qual_NoiseCalib_Param_Item>
-		</Qual_ISP_NoiseCalib_Params>
-	</LegacyInternalParamsGroup>
 </TetrasSRParams>
