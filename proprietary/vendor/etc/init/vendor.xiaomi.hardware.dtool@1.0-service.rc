@@ -1,5 +1,0 @@
-service getdump_hal /vendor/bin/hw/vendor.xiaomi.hardware.dtool@1.0-service
-    class late_start
-    user system
-    group system input
-

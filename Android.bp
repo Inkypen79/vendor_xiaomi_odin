@@ -195,17 +195,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "WAPPushManager",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/WAPPushManager/WAPPushManager.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "atfwd",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/atfwd/atfwd.apk",
@@ -250,18 +239,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "EmergencyInfo",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/EmergencyInfo/EmergencyInfo.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "Polaris",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/Polaris/Polaris.apk",
@@ -289,18 +266,6 @@ android_app_import {
 	name: "QxwzLocationService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/QxwzLocationService/QxwzLocationService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "WallpaperCropper",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -510,13 +475,6 @@ dex_import {
 	name: "com.quicinc.cne.constants-V2.1-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.xiaomi.nfc",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/com.xiaomi.nfc.jar"],
 	system_ext_specific: true,
 }
 
@@ -930,27 +888,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_vendor.xiaomi.hardware.cld",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.cld.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_vendor.xiaomi.hardware.mfidoca",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_vendor.xiaomi.hardware.misecurity",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.misecurity.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -993,15 +933,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_vendor.xiaomi.hardware.vsimapp",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.vsimapp.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.qti.diag.hal.service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
@@ -1020,15 +951,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.fm@1.0",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.fm@1.0.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.qti.hardware.servicetracker@1.2-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml",
@@ -1041,24 +963,6 @@ prebuilt_etc_xml {
 	name: "vendor.qti.hardware.wifi.wificfr@1.0-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.wifi.wificfr@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.xiaomi.cit.bluetooth@1.0_manifest",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.cit.bluetooth@1.0_manifest.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.xiaomi.cit.wifi@1.0_manifest",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.cit.wifi@1.0_manifest.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -1109,17 +1013,3 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-prebuilt_hidl_interfaces {
-    name: "hidl_embmssl_interface",
-    interfaces: [
-        "vendor.qti.hardware.embmssl@1.0::IEmbms",
-        "vendor.qti.hardware.embmssl@1.1::IEmbms",
-    ],
-}
-
-prebuilt_hidl_interfaces {
-    name: "hidl_netperftuner_interface",
-    interfaces: [
-        "vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner",
-    ],
-}

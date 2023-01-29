@@ -1,5 +1,0 @@
-service vendor.xiaomi.cit.wifi  /vendor/bin/hw/vendor.xiaomi.cit.wifi@1.0-service
-    class late_start
-    user root
-    group system
-    oneshot

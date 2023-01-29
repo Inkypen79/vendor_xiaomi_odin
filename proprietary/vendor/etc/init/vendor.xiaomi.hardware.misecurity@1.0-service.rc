@@ -1,3 +1,0 @@
-service vendor.misecurity-hal-1-0 /vendor/bin/misecurityd@1.0
-    class hal
-    group system
