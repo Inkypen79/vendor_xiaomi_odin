@@ -35,6 +35,10 @@ Full documentation at frameworks/base/data/etc/preinstalled-packages-platform.xm
 
     <!-- telephony-apps -->
 
+    <install-in-user-type package="com.qti.telephonysettings">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
     <install-in-user-type package="com.qualcomm.atfwd">
         <install-in user-type="SYSTEM" />
     </install-in-user-type>

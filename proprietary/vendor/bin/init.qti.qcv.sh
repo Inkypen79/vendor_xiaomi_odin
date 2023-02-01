@@ -16,6 +16,7 @@ if [ "$soc_id" -eq 415 ] || [ "$soc_id" -eq 439 ] || [ "$soc_id" -eq 456 ] ||
    [ "$soc_id" -eq 501 ] || [ "$soc_id" -eq 502 ]; then
     setprop ro.vendor.qti.soc_name lahaina
     setprop ro.vendor.qti.soc_model SM8350
+    setprop ro.vendor.media_performance_class 31
 elif [ "$soc_id" -eq 450 ]; then
     setprop ro.vendor.qti.soc_name shima
     setprop ro.vendor.qti.soc_model SM7350

@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.xiaomi.gnss.polaris">
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST" />
+    </privapp-permissions>
+</permissions>

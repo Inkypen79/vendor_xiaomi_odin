@@ -119,7 +119,7 @@
   </nightview>
 
   <dxo_nightview_0 feature="1X_auto_default" enable="true">
-        <dxo_nightview_light>15.2</dxo_nightview_light>
+        <dxo_nightview_light>25</dxo_nightview_light>
         <dxo_nightview_bright_ratio_thresh>0.003</dxo_nightview_bright_ratio_thresh>
         <dxo_nightview_dark_ratio_thresh>0.17</dxo_nightview_dark_ratio_thresh>
         <dxo_lux_index_thresh>310</dxo_lux_index_thresh>
@@ -157,7 +157,7 @@
         <dxo_lux_index_thresh>310</dxo_lux_index_thresh>
         <dxo_middle_ratio_thresh>0.6</dxo_middle_ratio_thresh>
 
-        <dxo_lux_index_thresh_face>400.0</dxo_lux_index_thresh_face>
+        <dxo_lux_index_thresh_face>366.0</dxo_lux_index_thresh_face>
         <dxo_nightview_light_face>10.0</dxo_nightview_light_face>
         <dxo_nightview_dark_ratio_thresh_face>0.18</dxo_nightview_dark_ratio_thresh_face>
         <dxo_nightview_middle_ratio_thresh_face>0.5</dxo_nightview_middle_ratio_thresh_face>

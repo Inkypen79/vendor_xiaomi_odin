@@ -1,0 +1,102 @@
+{
+    "version": "1.0",
+    "product": "odin",
+    "threshold": {
+            "lowAdj_threshold": 0,
+            "cam_boost_threshold": 2621440,
+            "3rd_lowAdj_threshold": 50,
+            "update_state_delay_ms": 5000,
+            "kill_lowprio_sysapp_threshlod": 10240,
+            "intercept_restart_time": 3000,
+            "kill_highprio_sysapp_threshlod": 30720,
+            "skip_task_lower": 1,
+            "protect_locktask_num": 2,
+            "kill_tag": 7
+        },
+    "support": {
+        "oom_update_support": true,
+        "perceptible_support": true,
+        "inhibit_3rdprocs_enable": true
+        },
+    "oom": {
+            "oom_level": "18432:0,23040:100,27648:200,64512:300,115712:800,216370:900"
+        },
+    "configs": [
+        {
+            "name": "black_list",
+            "config": [
+                "com.miui.newhome:launcher",
+                "com.miui.newhome",
+                "com.miui.systemAdSolution",
+                "com.xiaomi.smarthome:plugin0",
+                "com.xiaomi.smarthome",
+                "com.android.quicksearchbox",
+                "com.miui.systemAdSolution:ui",
+                "com.xiaomi.misettings",
+                "com.android.settings:remote"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.baidu.input_mi",
+                "com.iflytek.inputmethod.miui"
+            ]
+        },
+        {
+            "name": "inhibit_native_list",
+            "config": [
+                "com.google.android.gms.persistent",
+                "/system/bin/logd",
+                "/vendor/bin/diag-router",
+                "/vendor/bin/hw/android.hardware.security.keymint-service-qti"
+            ]
+        }
+    ],
+    "configs_cn": [
+        {
+            "name": "black_list",
+            "config": [
+                "com.miui.newhome:launcher",
+                "com.miui.newhome",
+                "com.miui.systemAdSolution",
+                "com.xiaomi.smarthome:plugin0",
+                "com.xiaomi.smarthome",
+                "com.android.quicksearchbox",
+                "com.google.android.gms",
+                "com.miui.systemAdSolution:ui",
+                "com.google.android.gms.persistent",
+                "com.xiaomi.misettings",
+                "com.android.settings:remote"
+            ]
+        },
+        {
+            "name": "intercept_restart_list",
+            "config": [
+                "com.xiaomi.bsp.gps.nps",
+                "com.android.settings:remote",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.baidu.input_mi",
+                "com.iflytek.inputmethod.miui",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        }
+    ]
+}

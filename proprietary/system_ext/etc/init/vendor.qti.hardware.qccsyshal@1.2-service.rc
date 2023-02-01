@@ -1,0 +1,32 @@
+#
+# Copyright (c) 2021-2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on post-fs-data
+    mkdir /data/misc/qcc 0770 system system
+    mkdir /dev/socket/qcc_app 0770 system system
+    chmod 2770 /dev/socket/qcc_app
+    mkdir /data/misc/qcc/conf 0770 system system
+
+on property:vendor.qti.qcc.oper.mode=1
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:1"
+    chown system system /data/misc/qcc/conf/qcc.conf
+
+on property:vendor.qti.qcc.oper.mode=2
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:2"
+    chown system system /data/misc/qcc/conf/qcc.conf
+
+on property:vendor.qti.qcc.oper.mode=3
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:3"
+    chown system system /data/misc/qcc/conf/qcc.conf
+
+on property:vendor.qti.qcc.oper.mode=4
+    write /data/misc/qcc/conf/qcc.conf "OperationMode:4"
+    chown system system /data/misc/qcc/conf/qcc.conf
+
+service qccsyshal@1.2-service /system/system_ext/bin/qccsyshal@1.2-service
+    class hal
+    user system
+    group system

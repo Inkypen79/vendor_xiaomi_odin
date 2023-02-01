@@ -8,6 +8,7 @@ on early-init
     write /dev/memcg/camera/app/memory.cache 0
     mkdir /dev/memcg/camera/provider  0755 system system
     write /dev/memcg/camera/provider/memory.cache 1
+    write /dev/memcg/camera/provider/memory.zram_writeback_control 1
     mkdir /dev/memcg/camera/service  0755 system system
     write /dev/memcg/camera/service/memory.cache 2
 

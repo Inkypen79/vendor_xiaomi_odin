@@ -140,6 +140,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "DeviceStatisticsService",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "DynamicDDSService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk",
@@ -184,9 +195,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "SimContact",
+	name: "atfwd",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/SimContact/SimContact.apk",
+	apk: "proprietary/system_ext/app/atfwd/atfwd.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -195,9 +206,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "atfwd",
+	name: "colorservice",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/atfwd/atfwd.apk",
+	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -228,9 +239,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "imssettings",
+	name: "uceShimService",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
+	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -251,33 +262,21 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QAS_DVC_MSP",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "QxwzLocationService",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/QxwzLocationService/QxwzLocationService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "beyondGnssService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/beyondGnssService/beyondGnssService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "dcf",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/priv-app/dcf/dcf.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -323,18 +322,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "seccamservice",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/seccamservice/seccamservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "xrcbservice",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/xrcbservice/xrcbservice.apk",
@@ -353,6 +340,13 @@ dex_import {
 }
 
 dex_import {
+	name: "com.qti.snapdragon.sdk.display",
+	owner: "xiaomi",
+	jars: ["proprietary/product/framework/com.qti.snapdragon.sdk.display.jar"],
+	product_specific: true,
+}
+
+dex_import {
 	name: "ActivityExt",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/ActivityExt.jar"],
@@ -363,6 +357,13 @@ dex_import {
 	name: "audiosphere",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/audiosphere.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "camerax-vendor-extensions",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/camerax-vendor-extensions.jar"],
 	system_ext_specific: true,
 }
 
@@ -493,6 +494,27 @@ dex_import {
 }
 
 dex_import {
+	name: "extphonelib",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/extphonelib.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "global-cleaner-empty",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/global-cleaner-empty.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "gson",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/gson.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "izat.xt.srv",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],
@@ -591,6 +613,27 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.data.factory-V2.5-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.5-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.6-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.6-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.7-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.7-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.data.mwqem-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.data.mwqem-V1.0-java.jar"],
@@ -647,6 +690,20 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.server-V1.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.server-V1.3-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.server-V1.3-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.hardware.data.connection-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
@@ -678,6 +735,13 @@ dex_import {
 	name: "vendor.qti.hardware.data.flow-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.flow-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.flow-V1.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.flow-V1.1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -724,9 +788,9 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.qti.hardware.fingerprint-V1.0-java",
+	name: "vendor.qti.hardware.dpmservice-V1.1-java",
 	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar"],
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.dpmservice-V1.1-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -773,6 +837,20 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.configservice-V1.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.connection-V1.0-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.factory-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar"],
@@ -790,6 +868,20 @@ dex_import {
 	name: "vendor.qti.ims.factory-V2.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V2.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V2.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -822,6 +914,48 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.rcssip-V1.0-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcssip-V1.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcssip-V1.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.0-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.latency-V2.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar"],
@@ -832,6 +966,13 @@ dex_import {
 	name: "vendor.qti.latency-V2.1-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.2-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -978,15 +1119,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.micharge@1.0",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.xiaomi.hardware.misys@1.0",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml",
@@ -1008,6 +1140,15 @@ prebuilt_etc_xml {
 	name: "vendor.xiaomi.hardware.misys@3.0",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.misys@4.0",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@4.0.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,

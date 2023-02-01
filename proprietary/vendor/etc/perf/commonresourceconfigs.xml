@@ -254,6 +254,8 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0xF" Node="/sys/devices/system/cpu/bus_dcvs/DDR/19091000.qcom,bwmon-ddr/min_freq" />
         <Minor OpcodeValue="0x10" Node="/sys/devices/system/cpu/bus_dcvs/DDR/19091000.qcom,bwmon-ddr/max_freq" />
         <Minor OpcodeValue="0x11" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/use_ab" />
+        <Minor OpcodeValue="0x12" Node="/sys/class/devfreq/18590100.qcom,snoop-l3-bw/bw_hwmon/io_percent" />
+        <Minor OpcodeValue="0x13" Node="/sys/class/devfreq/18590100.qcom,snoop-l3-bw/polling_interval" />
 
     <!-- llcbw hwmon major end -->
 
@@ -285,6 +287,11 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x16" Node="/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:l3:prime/min_freq" />
         <Minor OpcodeValue="0x17" Node="/sys/devices/system/cpu/bus_dcvs/LLCC/soc:qcom,memlat:llcc:silver/min_freq" />
         <Minor OpcodeValue="0x18" Node="/sys/devices/system/cpu/bus_dcvs/DDR/soc:qcom,memlat:ddr:silver/min_freq" />
+        <Minor OpcodeValue="0x19" Node="/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/polling_interval" />
+        <Minor OpcodeValue="0x1A" Node="/sys/class/devfreq/soc:qcom,cpu4-llcc-ddr-lat/polling_interval" />
+        <Minor OpcodeValue="0x1B" Node="/sys/class/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/polling_interval" />
+        <Minor OpcodeValue="0x1C" Node="/sys/class/devfreq/soc:qcom,cpu4-cpu-ddr-latfloor/polling_interval" />
+        <Minor OpcodeValue="0x1D" Node="/sys/class/devfreq/18590100.qcom,cpu7-cpu-l3-latfloor/polling_interval" />
     <!-- memlat major end -->
 
     <!-- npu major start -->
@@ -299,5 +306,12 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x5" Node="SPECIAL_NODE - npu_ddr_llcbw_hwmon_hyst_opt" />
     <!-- npu major end -->
 
+    <!-- camera param major start -->
+     <Major OpcodeValue="0xF" />
+        <Minor OpcodeValue="0x0" Node="/dev/cpuset/camera-daemon/cpus" />
+        <Minor OpcodeValue="0x1" Node="/dev/cpuset/camera-background/cpus" />
+        <Minor OpcodeValue="0x2" Node="/dev/cpuctl/camera-daemon/cpu.uclamp.min" />
+        <Minor OpcodeValue="0x3" Node="/dev/cpuctl/camera-daemon/cpu.uclamp.sched_boost_no_override" />
+    <!-- camera major end -->
     </PerfResources>
 </ResourceConfigs>

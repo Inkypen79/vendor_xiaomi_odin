@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <allow-in-power-save package="com.android.deskclock"/>
+    <allow-in-power-save package="com.android.updater"/>
+    <allow-in-power-save package="com.android.mms"/>
+    <allow-in-power-save package="com.google.android.apps.messaging"/>
+</permissions>

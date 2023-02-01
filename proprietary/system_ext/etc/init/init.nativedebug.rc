@@ -1,0 +1,26 @@
+# nativedebug rc
+
+on post-fs-data
+    mkdir /data/miuilog/stability/nativecrash 0771 system system
+    chown system system /data/miuilog/stability/nativecrash
+    chmod 0771 /data/miuilog/stability/nativecrash
+    restorecon /data/miuilog/stability/nativecrash
+
+on property:sys.miui.ndcd=on
+    mkdir /data/miuilog/stability/nativecrash/coredump 0777 root root
+    chmod 0777 /data/miuilog/stability/nativecrash/coredump
+    restorecon /data/miuilog/stability/nativecrash/coredump
+    write /proc/sys/kernel/core_pattern "|/system/bin/micd %e %p"
+
+on property:sys.miui.ndcd=off
+    write /proc/sys/kernel/core_pattern "/dev/null"
+
+
+on property:sys.miui.gki_ndcd=on
+    mkdir /data/miuilog/stability/nativecrash/coredump 0777 root root
+    chmod 0777 /data/miuilog/stability/nativecrash/coredump
+    restorecon /data/miuilog/stability/nativecrash/coredump
+    write /proc/sys/kernel/core_pattern "/data/miuilog/stability/nativecrash/coredump/core-%e-%p"
+
+on property:sys.miui.gki_ndcd=off
+    write /proc/sys/kernel/core_pattern "/dev/null"

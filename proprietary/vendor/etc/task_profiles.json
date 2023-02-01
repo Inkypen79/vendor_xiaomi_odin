@@ -153,7 +153,19 @@
         }
       ]
     },
-
+    {
+      "Name": "CameraServicePerformance",
+      "Actions" : [
+        {
+          "Name" : "JoinCgroup",
+          "Params" :
+          {
+            "Controller": "cpu",
+            "Path": "camera-daemon"
+          }
+        }
+      ]
+    },
     {
       "Name": "VrKernelCapacity",
       "Actions": [
