@@ -1478,6 +1478,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/odin/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
     vendor/xiaomi/odin/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
     vendor/xiaomi/odin/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.b00 \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.b01 \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.b02 \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.b03 \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.b04 \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.b05 \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.b06 \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.b07 \
+    vendor/xiaomi/odin/proprietary/vendor/firmware/featenabler.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/featenabler.mdt \
     vendor/xiaomi/odin/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/xiaomi/odin/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
     vendor/xiaomi/odin/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
