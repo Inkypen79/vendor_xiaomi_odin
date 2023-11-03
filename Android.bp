@@ -508,13 +508,6 @@ dex_import {
 }
 
 dex_import {
-	name: "gson",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/gson.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "izat.xt.srv",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],

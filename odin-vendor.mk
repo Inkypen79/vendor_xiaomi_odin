@@ -2822,7 +2822,6 @@ PRODUCT_PACKAGES += \
     embmslibrary \
     extphonelib \
     global-cleaner-empty \
-    gson \
     izat.xt.srv \
     mirilhook \
     mirilmsgtunnel \
