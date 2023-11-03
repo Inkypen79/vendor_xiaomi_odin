@@ -2787,7 +2787,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     atfwd \
     colorservice \
-    datastatusnotification \
     embms \
     uceShimService \
     Polaris \
