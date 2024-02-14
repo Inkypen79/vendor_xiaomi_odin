@@ -1,11 +1,7 @@
 {
   "config": {
-    "hw_platform": [
-      "MTP", "Dragon", "Surf","ODIN"
-    ],
-    "soc_id": [
-      "291", "246", "305", "341", "356", "415"
-    ]
+    "hw_platform": ["MTP", "Dragon", "Surf", "ODIN"],
+    "soc_id": ["291", "246", "305", "321", "339", "415"]
   },
   "sns_screen_down": {
     "owner": "sns_screen_down",
@@ -22,6 +18,18 @@
           },
           "param4": {
             "ver": "1", "type": "flt", "data": "0"
+          }
+      },
+      ".params1":{
+        "owner": "sns_screen_down",
+          "param1": {
+             "ver": "1", "type": "flt", "data": "-35"
+          },
+          "param2": {
+            "ver": "1", "type": "flt", "data": "-90"
+          },
+          "param3": {
+            "ver": "1", "type": "flt", "data": "5"
           }
       }
   }

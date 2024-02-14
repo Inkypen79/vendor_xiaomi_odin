@@ -34,7 +34,11 @@
             "kill_lowprio_sysapp_threshlod": 0,
             "kill_highprio_sysapp_threshlod": 0,
             "kill_tag": 1,
-            "protect_locktask_num": 0
+            "protect_locktask_num": 0,
+            "3rdcam_boost_threshold": 2097152,
+            "3rd_skip_task_lower": 3,
+            "3rd_lowAdj_threshold": 701,
+            "3rd_kill_tag": 1
         },
     "configs": [
         {
@@ -144,16 +148,16 @@
             ]
         }
     ],
-    "oom_lowmem": {
+    "oom_6Gmem": {
             "oom_level": "18432:0,23040:100,27648:200,85000:250,127500:800,161280:950"
         },
-    "threshold_lowmem": {
+    "threshold_6Gmem": {
             "skip_task": 1,
             "adj_threshold": 701,
             "lowAdj_threshold": 200,
             "cam_boost_threshold": 0
         },
-    "configs_lowmem": [
+    "configs_6Gmem": [
         {
             "name": "protect_list",
             "config": [
