@@ -253,9 +253,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "beyondGnssService",
+	name: "com.qualcomm.location",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/beyondGnssService/beyondGnssService.apk",
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

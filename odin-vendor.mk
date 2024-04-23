@@ -2806,7 +2806,7 @@ PRODUCT_PACKAGES += \
     embms \
     uceShimService \
     Polaris \
-    beyondGnssService \
+    com.qualcomm.location \
     dcf \
     dpmserviceapp \
     ims \
