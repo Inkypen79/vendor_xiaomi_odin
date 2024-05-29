@@ -1,0 +1,31 @@
+actionitem {
+
+[
+name:dropcache
+path:/proc/sys/vm/drop_caches
+]
+
+[
+name:extra_free_kbytes
+path:/proc/sys/vm/extra_free_kbytes
+]
+
+[
+name:global_reclaim
+path:/proc/global_reclaim
+]
+
+}
+
+policy {
+
+[
+name:		global_reclaim
+memitem:	memitem_init	memitem_init
+algo:	        low		high
+threshold:	8		1
+actionitem:	global_reclaim
+target:		262144
+]
+
+}

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "common": {
+    "isOptimizeEnable": 1,
+    "friction": -2.15,
+    "velocityThreshold": 50,
+    "flywheel": 1,
+    "flywheelTimeIntervalThreshold": 500,
+    "flywheelVelocityThreshold1": 3000,
+    "flywheelVelocityThreshold2": 1000,
+    "flywheelParam1": 0.0005,
+    "flywheelParam2": 1.8,
+    "flywheelParam3": 15000,
+    "flingVelocityThreshold": 500,
+    "flingVelocityScaled": 1,
+    "flingVelocityMaximum": 21000,
+    "appList": [{
+      "packageName": "com.sina.weibo",
+      "isOptimizeEnable": 1,
+      "friction": -2.08,
+      "velocityThreshold": 50,
+      "flywheel": 1,
+      "flywheelTimeIntervalThreshold": 500,
+      "flywheelVelocityThreshold1": 3000,
+      "flywheelVelocityThreshold2": 1000,
+      "flywheelParam1": 0.0005,
+      "flywheelParam2": 1.8,
+      "flywheelParam3": 15000,
+      "flingVelocityThreshold": 500,
+      "flingVelocityScaled": 1.6,
+      "flingVelocityMaximum": 21000
+    }]
+  }
+}

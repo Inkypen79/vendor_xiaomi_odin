@@ -121,10 +121,18 @@ function configure_memory_parameters() {
 	# Set allocstall_threshold to 0 for all targets.
 	#
 
+	ProductName=`getprop ro.product.name`
 	configure_zram_parameters
 	configure_read_ahead_kb_values
 	echo 100 > /proc/sys/vm/swappiness
-	echo 1 > /proc/sys/vm/watermark_scale_factor
+	#echo 1 > /proc/sys/vm/watermark_scale_factor
+	if [ "$ProductName" == "haydn" ] ; then
+		echo 10 > /proc/sys/vm/watermark_scale_factor
+	elif [ "$ProductName" == "venus" ] ; then
+		echo 10 > /proc/sys/vm/watermark_scale_factor
+	else
+		echo 1 > /proc/sys/vm/watermark_scale_factor
+	fi
 
 	# add memory limit to camera cgroup
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
@@ -194,7 +202,7 @@ echo 325 > /proc/sys/kernel/walt_low_latency_task_threshold
 echo 0-2 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
 echo " " > /dev/cpuset/foreground/boost/cpus
-echo 0-2,4-7 > /dev/cpuset/foreground/cpus
+echo 0-7 > /dev/cpuset/foreground/cpus
 echo 0-7 > /dev/cpuset/top-app/cpus
 
 # Turn off scheduler boost at the end

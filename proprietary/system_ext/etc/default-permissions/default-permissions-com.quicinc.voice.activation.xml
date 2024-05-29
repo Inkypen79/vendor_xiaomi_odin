@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+<!--
+  ~ Copyright (c) 2021 Qualcomm Technologies, Inc.
+  ~ All Rights Reserved.
+  ~ Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<exceptions>
+    <exception
+            package="com.quicinc.voice.activation"
+            sha256-cert-digest="F6:78:2B:F3:F6:6A:5E:83:81:EC:47:0F:E0:45:89:4E:4B:72:A9:82:BF:88:AC:59:4B:78:BC:6C:07:7A:FD:8E">
+        <permission name="android.permission.RECORD_AUDIO" fixed="false" whitelisted="true" />
+    </exception>
+</exceptions>

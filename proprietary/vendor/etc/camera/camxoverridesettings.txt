@@ -1,22 +1,12 @@
 # K8 setting file
 multiCameraLogicalXMLFile=odin.xml
 
-#close camera log
-logInfoMask=0
-overrideLogLevels=0x1
-logWarningMask=0
-logConfigMask=0
-systemLogEnable=TRUE
-logCoreCfgMask=0
-enableAsciiLogging=0
-logRequestMapping=FALSE
-enableTxtLogging=0
-traceGroupsEnable=0
-enable3ADebugData=FALSE
-enableTuningMetadata=FALSE
-raiserecoverysigabrt=FALSE
-enableCameraCoreDumpBinary=FALSE
-enableCameraCoreDumpText=FALSE
+# LOG
+logInfoMask=0x10098
+logConfigMask=0x10080
+overrideLogLevels=0x1F
+enableTxtLogging=1
+raiserecoverysigabrt=TRUE
 
 #enable high thermal strategy
 enableBLMClient=1

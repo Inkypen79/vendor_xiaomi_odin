@@ -117,7 +117,7 @@ INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.pwropt_modepref_0", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.pwropt_modepref_1", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.default_network", "0");
-INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.always_send_plmn", "0");
+INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.always_send_plmn", "1");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.restore_mode_pref", "false");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.manual_nw_rej_ct", "0");
 INSERT OR REPLACE INTO qcril_properties_table(property, def_val) VALUES("persist.vendor.radio.ignore_dom_time", "0");

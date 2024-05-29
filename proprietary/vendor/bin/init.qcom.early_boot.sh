@@ -460,7 +460,7 @@ set_density_by_fb
 
 
 # set Lilliput LCD density for ADP
-product=`getprop ro.build.product`
+product=`getprop ro.product.odm.name`
 
 case "$product" in
         "msmnile_au")
@@ -499,6 +499,14 @@ esac
 case "$product" in
         "msmnile_gvmgh")
          setprop vendor.display.lcd_density 160
+         ;;
+        *)
+        ;;
+esac
+
+case "$product" in
+        "cetus")
+         setprop vendor.display.lcd_density 360
          ;;
         *)
         ;;

@@ -1,0 +1,15 @@
+# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service qsguard /system_ext/bin/qsguard
+    class late_start
+    user system
+    group system readproc
+    capabilities KILL
+# MIUI ADD: Stability_StabilityEnhance
+    disabled
+
+on nonencrypted && property:ro.debuggable=1
+    start qsguard
+# END Stability_StabilityEnhance

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---/******************************************************************************
+* @file      com.qualcomm.qti.VENDORSSGTZD.xml
+* @brief
+*  Copyright (c) 2022 Qualcomm Technologies, Inc.
+*  All Rights Reserved.
+*  Confidential and Proprietary - Qualcomm Technologies, Inc.
+*  *****************************************************************************-->
+
+<permissions>
+  <permission name="com.qualcomm.permission.qti.VENDORSSGTZD" >
+    <group gid="oem_2912" />
+  </permission>
+</permissions>
