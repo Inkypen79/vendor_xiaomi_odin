@@ -3019,8 +3019,8 @@ PRODUCT_PACKAGES += \
     MipayService \
     SoterService \
     TimeService \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
+    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     AtFwd2 \
     DeviceInfo \
     DeviceStatisticsService \
