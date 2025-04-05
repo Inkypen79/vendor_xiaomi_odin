@@ -800,28 +800,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudiocloudctrl_vendor",
-	stem: "libaudiocloudctrl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudiocloudctrl.so"],
-			shared_libs: ["liblog", "libcutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libaudiocloudctrl.so"],
-			shared_libs: ["liblog", "libcutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libaudioconfigstore",
 	owner: "xiaomi",
 	strip: {
@@ -2731,6 +2709,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -3067,49 +3046,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqttestclient",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqttestclient.so"],
-			shared_libs: ["libqttestservice", "libc++", "libcutils", "libutils", "liblog", "libbinder", "libjsoncpp", "libqcodec2_base", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqttestclient.so"],
-			shared_libs: ["libqttestservice", "libc++", "libcutils", "libutils", "liblog", "libbinder", "libjsoncpp", "libqcodec2_base", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqttestservice",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqttestservice.so"],
-			shared_libs: ["libqtjsonhelper", "libbinder", "libc++", "libcutils", "libutils", "liblog", "libjsoncpp", "libqtbase", "libqcodec2_base", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqttestservice.so"],
-			shared_libs: ["libqtjsonhelper", "libbinder", "libc++", "libcutils", "libutils", "liblog", "libjsoncpp", "libqtbase", "libqcodec2_base", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -4476,6 +4412,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -12755,7 +12692,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/mediadrm/libwvdrmengine.so"],
-			shared_libs: ["libbase", "libcrypto", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcrypto_shim", "libbase", "libcrypto", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16072,48 +16009,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudioclientimpl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libaudioclientimpl.so"],
-			shared_libs: ["liblog", "libbase", "liblp", "libutils", "libcutils", "libaudioclient", "libmedia_helper", "libmediautils", "libbinder", "media_permission-aidl-cpp", "libpermission", "libxlog", "libprocessgroup", "audioclient-types-aidl-cpp", "audioflinger-aidl-cpp", "audiopolicy-aidl-cpp", "audiopolicy-types-aidl-cpp", "libaudioclient_aidl_conversion", "libactivitymanager_aidl", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libaudioclientimpl.so"],
-			shared_libs: ["liblog", "libbase", "liblp", "libutils", "libcutils", "libaudioclient", "libmedia_helper", "libmediautils", "libbinder", "media_permission-aidl-cpp", "libpermission", "libxlog", "libprocessgroup", "audioclient-types-aidl-cpp", "audioflinger-aidl-cpp", "audiopolicy-aidl-cpp", "audiopolicy-types-aidl-cpp", "libaudioclient_aidl_conversion", "libactivitymanager_aidl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libaudiocloudctrl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libaudiocloudctrl.so"],
-			shared_libs: ["liblog", "libcutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libaudiocloudctrl.so"],
-			shared_libs: ["liblog", "libcutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libbarrage_utils",
 	owner: "xiaomi",
 	strip: {
@@ -16217,7 +16112,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN7android18BnProducerListener16onBufferDetachedEi
 cc_prebuilt_library_shared {
 	name: "libcamera_algoup_jni.xiaomi",
 	owner: "xiaomi",
@@ -16237,8 +16132,9 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true
 }
-
+// _ZN7android18BnProducerListener16onBufferDetachedEi
 cc_prebuilt_library_shared {
 	name: "libcamera_mianode_jni.xiaomi",
 	owner: "xiaomi",
@@ -16258,8 +16154,9 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true
 }
-
+// _ZNK7android14CameraMetadata11getVendorIdEPy
 cc_prebuilt_library_shared {
 	name: "libcameradngimpl",
 	owner: "xiaomi",
@@ -16279,6 +16176,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true
 }
 
 cc_prebuilt_library_shared {
@@ -16827,7 +16725,7 @@ cc_prebuilt_library_shared {
 	system_ext_specific: true,
 allow_undefined_symbols: true,
 }
-
+// android_fdtrack_compare_exchange_hook
 cc_prebuilt_library_shared {
 	name: "libmonitortrack",
 	owner: "xiaomi",
@@ -16847,6 +16745,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -18073,7 +17972,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// SetProcessProfilesCached and get_cpuset_policy
 cc_prebuilt_library_shared {
 	name: "libcameraopt_jni",
 	owner: "xiaomi",
@@ -18089,6 +17988,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -18101,23 +18001,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libcrop.so"],
 			shared_libs: ["liblog", "libz", "libm", "libdl", "libc", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcustbootanimationimpl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libcustbootanimationimpl.so"],
-			shared_libs: ["libbase", "libcutils", "liblog", "libutils", "libandroidfw", "libbootanimation", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -18702,7 +18585,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// createProcessGroup
 cc_prebuilt_library_shared {
 	name: "libprocdaemon",
 	owner: "xiaomi",
@@ -18718,6 +18601,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -19025,7 +18909,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN7android4base4TrimERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
 cc_prebuilt_library_shared {
 	name: "libugrab",
 	owner: "xiaomi",
@@ -19041,6 +18925,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -19076,7 +18961,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN7art_api3dex17TryLoadLibdexfileEPNSt3_112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
 cc_prebuilt_library_shared {
 	name: "libwalkstack",
 	owner: "xiaomi",
@@ -19092,6 +18977,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -20385,7 +20271,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN4aidl7android8hardware6common12NativeHandle14readFromParcelEPK7AParcel
 cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.qxr-V1-ndk_platform",
 	owner: "xiaomi",
@@ -20401,6 +20287,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -23659,7 +23546,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/chifeature2test"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libprocessgroup", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "com.qti.feature2.generic", "com.qti.feature2.hdr", "com.qti.feature2.mfsr", "com.qti.feature2.rt", "libchilog", "libui", "libxml", "vendor.qti.hardware.camera.postproc@1.0-service-impl", "libcamlog", "libz", "libdl", "libc", "libm", ],
+			shared_libs: ["libprocessgroup_shim", "libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libprocessgroup", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.chi.override", "com.qti.feature2.generic", "com.qti.feature2.hdr", "com.qti.feature2.mfsr", "com.qti.feature2.rt", "libchilog", "libui", "libxml", "vendor.qti.hardware.camera.postproc@1.0-service-impl", "libcamlog", "libz", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
@@ -23744,7 +23631,6 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/cnss_diag"],
-			shared_libs: ["libcutils", "libdiag", "libhardware_legacy", "libtime_genoff", "libnl", "libcld80211", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -23753,6 +23639,7 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	soc_specific: true,
+	check_elf_files: false,
 }
 
 cc_prebuilt_binary {
@@ -23999,7 +23886,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/f2player"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libprocessgroup", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.feature2.generic", "com.qti.feature2.hdr", "com.qti.feature2.mfsr", "com.qti.feature2.rt", "libchilog", "libui", "vendor.qti.hardware.camera.postproc@1.0-service-impl", "libxml", "libcamlog", "libz", "libdl", "libc", "libm", ],
+			shared_libs: ["libprocessgroup_shim", "libc++", "libcutils", "liblog", "libofflinelog", "libsync", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.common@1.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "vendor.qti.hardware.display.allocator@3.0", "vendor.qti.hardware.display.mapper@2.0", "vendor.qti.hardware.display.mapper@3.0", "libprocessgroup", "libcamera_metadata", "libutils", "libqti_vndfwk_detect", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "libgralloc.qti", "libgralloctypes", "vendor.qti.hardware.display.allocator@4.0", "vendor.qti.hardware.display.mapper@4.0", "vendor.qti.hardware.display.mapperextensions@1.1", "com.qti.feature2.generic", "com.qti.feature2.hdr", "com.qti.feature2.mfsr", "com.qti.feature2.rt", "libchilog", "libui", "vendor.qti.hardware.camera.postproc@1.0-service-impl", "libxml", "libcamlog", "libz", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
@@ -24186,7 +24073,6 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hal_proxy_daemon"],
-			shared_libs: ["libnl", "libcutils", "liblog", "libwifi-hal-qcom", "libhardware_legacy", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -24195,6 +24081,7 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	soc_specific: true,
+	check_elf_files: false,
 }
 
 cc_prebuilt_binary {
@@ -25903,40 +25790,6 @@ sh_binary {
 }
 
 cc_prebuilt_binary {
-	name: "qttestclient",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/qttestclient"],
-			shared_libs: ["libqttestservice", "libc++", "libcutils", "libutils", "liblog", "libbinder", "libjsoncpp", "libqttestclient", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "qttestservice",
-	owner: "xiaomi",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/qttestservice"],
-			shared_libs: ["libqttestservice", "libqtbase", "libqtnodes", "libbinder", "libc++", "libcutils", "libutils", "liblog", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "rmt_storage",
 	owner: "xiaomi",
 	target: {
@@ -26560,6 +26413,7 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_binary {
@@ -26816,7 +26670,7 @@ cc_prebuilt_binary {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN7android11AudioSystem20setStreamVolumeIndexE19audio_stream_type_ti15audio_devices_t
 cc_prebuilt_binary {
 	name: "spkcal_88263s",
 	owner: "xiaomi",
@@ -26832,8 +26686,9 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
-
+// _ZN7android11AudioSystem20setStreamVolumeIndexE19audio_stream_type_ti15audio_devices_t
 cc_prebuilt_binary {
 	name: "spkcal_tfa",
 	owner: "xiaomi",
@@ -26849,6 +26704,7 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_binary {

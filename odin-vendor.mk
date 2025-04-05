@@ -384,7 +384,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/odin/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/xiaomi/odin/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/odin/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/xiaomi/odin/proprietary/vendor/etc/init/qttestservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qttestservice.rc \
     vendor/xiaomi/odin/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/xiaomi/odin/proprietary/vendor/etc/init/slad.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/slad.rc \
     vendor/xiaomi/odin/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
@@ -994,7 +993,6 @@ PRODUCT_PACKAGES += \
     libaudcal \
     libaudio_log_utils \
     libaudioalsa \
-    libaudiocloudctrl_vendor \
     libaudioconfigstore \
     libaudioparsers \
     libaudioroute_ext \
@@ -1102,8 +1100,6 @@ PRODUCT_PACKAGES += \
     libqtigef \
     libqtjsonhelper \
     libqtnodes \
-    libqttestclient \
-    libqttestservice \
     librecovery_updater \
     libresampler \
     libscveCommon \
@@ -1859,8 +1855,6 @@ PRODUCT_PACKAGES += \
     libXiaoMiMagicVoice \
     libadvanced_crypto \
     libadvanced_crypto_jni \
-    libaudioclientimpl \
-    libaudiocloudctrl \
     libbarrage_utils \
     libbinauralrenderer_wrapper.qti \
     libboost \
@@ -1963,7 +1957,6 @@ PRODUCT_PACKAGES += \
     libcameraopt \
     libcameraopt_jni \
     libcrop \
-    libcustbootanimationimpl \
     libdashdatasource \
     libdashsamplesource \
     libdehijack \
@@ -2521,8 +2514,6 @@ PRODUCT_PACKAGES += \
     qti \
     qtigetprop \
     qtisetprop \
-    qttestclient \
-    qttestservice \
     rmt_storage \
     runDarkTestAPI \
     sensors.qti \
