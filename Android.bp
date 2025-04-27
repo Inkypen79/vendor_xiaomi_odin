@@ -2878,6 +2878,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -4622,6 +4623,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "32",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -8732,6 +8734,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -8749,6 +8752,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -8766,6 +8770,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -8783,6 +8788,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -8987,6 +8993,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -9055,6 +9062,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -9752,6 +9760,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -10211,6 +10220,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -10789,6 +10799,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -10806,6 +10817,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -16311,7 +16323,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN7android18BnProducerListener16onBufferDetachedEi
 cc_prebuilt_library_shared {
 	name: "libcamera_algoup_jni.xiaomi",
 	owner: "xiaomi",
@@ -16331,8 +16343,9 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true
 }
-
+// _ZN7android18BnProducerListener16onBufferDetachedEi
 cc_prebuilt_library_shared {
 	name: "libcamera_mianode_jni.xiaomi",
 	owner: "xiaomi",
@@ -16352,8 +16365,9 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true
 }
-
+// _ZNK7android14CameraMetadata11getVendorIdEPy
 cc_prebuilt_library_shared {
 	name: "libcameradngimpl",
 	owner: "xiaomi",
@@ -16373,6 +16387,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true
 }
 
 cc_prebuilt_library_shared {
@@ -16919,8 +16934,9 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
-
+// android_fdtrack_compare_exchange_hook
 cc_prebuilt_library_shared {
 	name: "libmonitortrack",
 	owner: "xiaomi",
@@ -16940,6 +16956,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -18166,7 +18183,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// SetProcessProfilesCached and get_cpuset_policy
 cc_prebuilt_library_shared {
 	name: "libcameraopt_jni",
 	owner: "xiaomi",
@@ -18182,6 +18199,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -18778,7 +18796,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// createProcessGroup
 cc_prebuilt_library_shared {
 	name: "libprocdaemon",
 	owner: "xiaomi",
@@ -18794,6 +18812,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -19101,7 +19120,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN7android4base4TrimERKNSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
 cc_prebuilt_library_shared {
 	name: "libugrab",
 	owner: "xiaomi",
@@ -19117,6 +19136,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -19152,7 +19172,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN7art_api3dex17TryLoadLibdexfileEPNSt3_112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
 cc_prebuilt_library_shared {
 	name: "libwalkstack",
 	owner: "xiaomi",
@@ -19168,6 +19188,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -20461,7 +20482,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN4aidl7android8hardware6common12NativeHandle14readFromParcelEPK7AParcel
 cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.qxr-V1-ndk_platform",
 	owner: "xiaomi",
@@ -20477,6 +20498,7 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_library_shared {
@@ -26602,6 +26624,7 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_binary {
@@ -26858,7 +26881,7 @@ cc_prebuilt_binary {
 	prefer: true,
 	system_ext_specific: true,
 }
-
+// _ZN7android11AudioSystem20setStreamVolumeIndexE19audio_stream_type_ti15audio_devices_t
 cc_prebuilt_binary {
 	name: "spkcal_88263s",
 	owner: "xiaomi",
@@ -26874,8 +26897,9 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
-
+// _ZN7android11AudioSystem20setStreamVolumeIndexE19audio_stream_type_ti15audio_devices_t
 cc_prebuilt_binary {
 	name: "spkcal_tfa",
 	owner: "xiaomi",
@@ -26891,6 +26915,7 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	system_ext_specific: true,
+allow_undefined_symbols: true,
 }
 
 cc_prebuilt_binary {
