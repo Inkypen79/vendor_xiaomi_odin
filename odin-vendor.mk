@@ -963,6 +963,7 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
+    audio.primary.lahaina \
     sound_trigger.primary.lahaina \
     vulkan.adreno \
     libAF \
@@ -978,6 +979,7 @@ PRODUCT_PACKAGES += \
     libQ6MSFR_manager_stub \
     libSNPE \
     libVkLayer_q3dtools \
+    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -993,9 +995,11 @@ PRODUCT_PACKAGES += \
     libaudcal \
     libaudio_log_utils \
     libaudioalsa \
+    libaudiocloudctrl \
     libaudioconfigstore \
     libaudioparsers \
     libaudioroute_ext \
+    libbatterylistener \
     libbitmlengine \
     libbitmlenginev2 \
     libboot_control_qti \
@@ -1011,11 +1015,13 @@ PRODUCT_PACKAGES += \
     libcdsprpc \
     libcert_parse.wpa_s \
     libchilog \
+    libcomprcapture \
     libcvface_api \
     libcvp2_1 \
     libcvp_common \
     libdiag \
     libdsutils \
+    libexthwplugin \
     libfastcvdsp_stub \
     libfastcvopt \
     libgcs-calwrapper \
@@ -1026,11 +1032,13 @@ PRODUCT_PACKAGES += \
     libgralloccore \
     libgrallocutils \
     libgsl \
+    libhdmiedid \
     libhdmipassthru \
     libhdr_stub \
     libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
+    libhfp \
     libhta \
     libhydra_common \
     libidl \
@@ -1115,6 +1123,7 @@ PRODUCT_PACKAGES += \
     libsmemlog \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
+    libsndmonitor \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v3 \
     libsns_api \
@@ -1125,6 +1134,7 @@ PRODUCT_PACKAGES += \
     libsnsapi \
     libsoc_helper \
     libsoc_helper_jni \
+    libspkrprot \
     libssrec \
     libswregistrationalgo \
     libsynx \
