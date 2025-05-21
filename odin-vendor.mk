@@ -1357,7 +1357,6 @@ PRODUCT_PACKAGES += \
     camera.xiaomi \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
-    consumerir.lahaina \
     fingerprint.goodix_fod.lahaina \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.gnss@4.0-impl \
@@ -2349,7 +2348,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.voiceprint-V1.0-java \
     vendor.xiaomi.hardware.misys.common-V1-java \
     android.hardware.gnss@2.1-service-qti.xml \
-    android.hardware.ir@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
