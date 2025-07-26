@@ -19027,7 +19027,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libsystemhelper_jni.so"],
-			shared_libs: ["liblog", "libcutils", "libbinder", "libutils", "libhidlbase", "libgui", "libui", "vendor.qti.hardware.systemhelper@1.0", "android.hardware.graphics.bufferqueue@1.0", "libstagefright_bufferqueue_helper", "vendor.qti.hardware.trustedui@1.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libgui_shim", "liblog", "libcutils", "libbinder", "libutils", "libhidlbase", "libgui", "libui", "vendor.qti.hardware.systemhelper@1.0", "android.hardware.graphics.bufferqueue@1.0", "libstagefright_bufferqueue_helper", "vendor.qti.hardware.trustedui@1.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
