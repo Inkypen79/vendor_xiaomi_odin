@@ -20474,7 +20474,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so"],
-			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk_platform", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
