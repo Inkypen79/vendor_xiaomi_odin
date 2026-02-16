@@ -435,15 +435,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/odin/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     vendor/xiaomi/odin/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     vendor/xiaomi/odin/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-nxp-BLACK-iot.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp-BLACK-iot.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-nxp-BLACK.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp-BLACK.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-nxp-GREY-iot.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp-GREY-iot.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-nxp-GREY.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp-GREY.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-nxp-WHITE-iot.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp-WHITE-iot.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-nxp-WHITE.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp-WHITE.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-nxp-iot.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp-iot.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp.conf \
-    vendor/xiaomi/odin/proprietary/vendor/etc/libuwb-uci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-uci.conf \
     vendor/xiaomi/odin/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/xiaomi/odin/proprietary/vendor/etc/ltm_config_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml \
     vendor/xiaomi/odin/proprietary/vendor/etc/mdss_dsi_k8_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_k8_42_02_0a_dsc_cmd_mi.xml \
