@@ -980,6 +980,7 @@ PRODUCT_PACKAGES += \
     libcalculator \
     libcalculator_htp \
     libcamera_nn_stub \
+    libcamxexternalformatutils \
     libcapiv2svacnn \
     libcapiv2svarnn \
     libcapiv2vop \
@@ -1426,7 +1427,6 @@ PRODUCT_PACKAGES += \
     libcamera_scene_dxo \
     libcamerapostproc \
     libcamlog \
-    libcamxexternalformatutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
     libcamxfdengine \
