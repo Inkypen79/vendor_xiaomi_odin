@@ -2212,9 +2212,6 @@ PRODUCT_PACKAGES += \
     extphonelib \
     qcrilhook \
     qmapbridge \
-    qti-telephony-common \
-    qti-telephony-hidl-wrapper \
-    qti-telephony-utils \
     vendor.qti.data.factory-V1.0-java \
     vendor.qti.data.factory-V2.0-java \
     vendor.qti.data.factory-V2.1-java \
