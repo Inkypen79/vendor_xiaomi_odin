@@ -123,7 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/odin/proprietary/system_ext/etc/init/init.qadaemon.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.qadaemon.rc \
     vendor/xiaomi/odin/proprietary/system_ext/etc/init/init.qseelogd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.qseelogd.rc \
     vendor/xiaomi/odin/proprietary/system_ext/etc/init/init.qti.bt.logger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.qti.bt.logger.rc \
-    vendor/xiaomi/odin/proprietary/system_ext/etc/init/qsguard.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qsguard.rc \
     vendor/xiaomi/odin/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/xiaomi/odin/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/xiaomi/odin/proprietary/system_ext/etc/overscrolleroptimization/config.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/overscrolleroptimization/config.json \
@@ -2526,7 +2525,6 @@ PRODUCT_PACKAGES += \
     qadaemon \
     qccsyshal@1.2-service \
     qseelogd \
-    qsguard \
     qxrsplitauxservice \
     tcmd \
     test_diag_system

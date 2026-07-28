@@ -48107,37 +48107,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "qsguard",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/qsguard",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libgui",
-                "libutils",
-                "libbinder",
-                "libservices",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "qxrsplitauxservice",
     owner: "xiaomi",
     target: {
